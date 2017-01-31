@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Polytechnique Montréal | Polytechnique Montréal est l’un des plus importants établissements d’enseignement et de recherche en génie au Canada</title>
+    <link rel="stylesheet" href="poly.css">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+		<header>
+
+			<div class="top-menu">FUTUR ETUDIANT | ETUDIANT ACTUEL | DIPLOME - ANCIEN | ENTREPRISE | MEDIAS | PROFESSEUR - PERSONNEL</div>
+
+		</header>
+
+		<div id="contenu">
+			<div>
+				<a id="logo" href="http://www.polymtl.ca">
+					<img src="images/couleurs-poly.png" alt="Accueil" />
+				</a>
+
+
+				<div id="english">ENGLISH</div>
+			</div>
+			<div id="informations">
+				<table class="social-menu">
+					<tr>
+						<td><a href="https://www.facebook.com"> <img src="images/logo-facebook.png" alt="facebook" /> </a></td>
+						<td><a href="https://www.linkedin.com"> <img src="images/logo-linkedin.png" alt="linkedIn" /> </a></td>
+						<td><a href="https://www.instagram.com"> <img src="images/logo-instagram.png" alt="instagram" /> </a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.rss.com"> <img src="images/logo-rss.png" alt="rss" /> </a></td>
+						<td><a href="https://www.twitter.com"> <img src="images/logo-twitter.png" alt="twitter" /> </a></td>
+						<td><a href="https://www.youtube.com"> <img src="images/logo-youtube.png" alt="youtube" /> </a></td>
+					</tr>
+				</table>
+
+				<div id="menus">
+
+					<div>
+						<a href="#">Liens rapides</a>
+					</div>
+					<div>
+						<a href="#"> <img src="images/rechercher.png"  /> </a>
+					</div>
+					<div>
+						<a href="#"> <img src="images/menu.png"  /> </a>
+					</div>
+				</div>
+				<div>
+						<img  id="photo" src="images/photo-etudiants.png"/>
+				</div>
+
+				<div class="descriptionPhoto">
+					<h1>INTERNATIONAL</h1>
+					<p>Avec plus de 250 ententes universitaires et 24% d'étudiants internationaux, Polytechnique Montréal est plus que jamais ouverte sur le monde.<br><br>
+						<a href="#">Découvrez les possibilités</a></p>
+				</div>
+			</div>
+			<div id="ActivitesNouvelles">
+				<my-app></my-app>
+				<div class="onglets">
+					NOUVELLES				
+				</div><div class="onglets">
+					ACTIVITÉS			
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

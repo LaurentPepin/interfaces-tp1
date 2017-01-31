@@ -1,0 +1,136 @@
+body, header {
+	margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+	font-family: "trebuchet ms","Aller",Arial,sans-serif;
+}
+
+
+.top-menu {
+	text-align: center;
+	background-color: #b91e32;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+#logo {
+	display: inline-block;
+}
+
+
+#english {
+	float: right;
+	display: inline-block;
+	color: #3F8EC4;
+}
+
+#contenu {
+
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 80px;
+    margin-left: 80px;
+	
+}
+
+.social-menu {
+	padding-top: 10px;
+	padding-left: 10px;
+	display: inline-block;
+	width: 160px;
+	height: 80px;
+}
+
+.social-menu tr td img {
+	padding-right: 10px;
+	width: 25px;
+	height: 25px;
+
+}
+
+#informations {
+	background-color: #F2F1F1;
+
+}
+
+#menus {
+	display: inline-block;
+	float: right;
+	padding-top:10px;
+padding-right:10px;
+}
+
+#menus div {
+	padding-top:15px;
+display: inline-block;
+padding-right:10px;
+padding-left:10px;
+}
+
+#menus div img{
+	vertical-align: text-top;
+	
+}
+
+#photo {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.descriptionPhoto {
+	padding: 10px;
+}
+
+#ActivitesNouvelles {
+}
+
+
+.onglets {
+	display: inline-block;
+	width: 48%;
+	border-top: 1px solid orange;
+	border-bottom: 1px solid orange;
+	font-weight: bold;
+	color: #1f1f1f;
+	padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
