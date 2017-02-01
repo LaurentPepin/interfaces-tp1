@@ -9,8 +9,9 @@ import { PolyDataService } from './poly-data.service';
 
 @Component({
   selector: 'news-table',
-  template: '<h1>Hello</h1>',
-  styles: ['À compléter si nénessaire ..'],
+  //template: '<table><li *ngFor="let nouvelle of nouvelles">{{ nouvelle.date }} - {{ nouvelle.titre }} : {{ nouvelle.message }}</li></ul>',
+  templateUrl: 'app/nouvelles.component.html',
+  styleUrls: ['../poly.css'],
   providers: [PolyDataService]
 })
 export class NouvellesComponent implements OnInit {

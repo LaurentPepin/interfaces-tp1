@@ -100,7 +100,19 @@ padding-left:10px;
 	padding: 1%;
 }
 
+.nouvelles-table {
+  border-collapse: collapse;
+}
+.nouvelles-table tr {
+	border-bottom-style: solid; 
+	border-bottom-width: 1px;
+	border-bottom-color: orange;
+	padding: 5px 10px; 
+}
 
+.nouvelle-date {
+	font-weight: bold;
+}
 
 
 

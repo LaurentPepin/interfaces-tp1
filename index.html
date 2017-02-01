@@ -73,14 +73,27 @@
 				</div>
 			</div>
 			<div id="ActivitesNouvelles">
-				<my-app></my-app>
-				<news-table></news-table>
-				<menu-items></menu-items>
-				<div class="onglets">
+				<my-app>
+					
+				</my-app>
+				
+				
+				<div class="onglets" onclick="showNews()">
 					NOUVELLES				
-				</div><div class="onglets">
+				</div><div class="onglets" onclick="showActivities()">
 					ACTIVITÉS			
 				</div>
+				<news-table id="news-table"></news-table>
+				<script>
+					function showNews() {
+    					document.getElementById("news-table").style.display = "initial";
+						//document.getElementByTagName("activities-table").style.display = "none";
+					}
+					function showActivities() {
+    					document.getElementById("news-table").style.display = "none";
+						//document.getElementByTagName("activities-table").style.display = "inline";
+					}
+				</script>
 			</div>
 		</div>
 	</body>
