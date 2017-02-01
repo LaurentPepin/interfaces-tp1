@@ -16,15 +16,16 @@ import { PolyDataService } from './poly-data.service';
 export class NouvellesComponent implements OnInit {
   nouvelles: Object;
   menuItems: Object;
-
+  
   // Construteur
-  constructor(private polyDataService: PolyDataService) { }
+  constructor(private polyDataService: PolyDataService) {}
 
   // Permet d'obtenir les nouvelles en utilisant le service dédié.
   getListeNouvelles(): void {
     this.polyDataService.getListeNouvelles()
       .then((response: Object) => this.nouvelles = response)
       .catch(this.handleError);
+      console.log('getListeNouvelles');
   }
 
   // À compléter 
@@ -33,6 +34,7 @@ export class NouvellesComponent implements OnInit {
   ngOnInit(): void {
     this.getListeNouvelles();
     // À compléter ...
+
   }
 
   // Méthode de gestion d'erreur.

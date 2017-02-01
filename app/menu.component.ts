@@ -9,7 +9,7 @@ import { PolyDataService } from './poly-data.service';
 
 @Component({
   selector: 'menu-items',
-  template: ' // À compléter si nécessaire ...',
+  template: ' <p>Items<p>',
   styles: [/* À compléter si nécessaire*/ ],
   providers: [ PolyDataService ]
 })
@@ -26,3 +26,4 @@ export class MenuComponent implements OnInit {
     // À compléter ...
   }
 }
+

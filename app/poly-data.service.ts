@@ -14,13 +14,14 @@ export class PolyDataService {
   // À compléter
   // ...
 
-  constructor(private http: Http) { }
+  constructor(private http: Http) {  console.log('Poly-data constructor');}
 
   getListeNouvelles(): Promise<Object> {
     return this.http.get('../data/nouvelles.json')
       .toPromise()
       .then(response => response.json())
       .catch(this.handleError);
+     
   }
 
   // À compléter
