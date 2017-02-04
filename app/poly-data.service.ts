@@ -31,6 +31,15 @@ export class PolyDataService {
       .catch(this.handleError);
   }
 
+  getListeHeaderMenuItems():Promise<Object> {
+    return this.http.get('../data/menu.json')
+      .toPromise()
+      .then(response => response.json())
+      .catch(this.handleError);
+  }
+
+
+
   // À compléter
   // ...
 

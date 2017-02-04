@@ -1,7 +1,10 @@
-<script>
-$(document).ready(function(){
-    $("#hide").click(function(){
-        $("menu-table").toggle();
+
+    $(document).ready(function(){
+        $("#menu-table").hide();
     });
-});
-</script>
+
+    $(document).ready(function(){
+        $("#menuButton").click(function(){
+            $("#menu-table").toggle();
+        });
+    });
