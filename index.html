@@ -18,6 +18,18 @@
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#menu-table").hide();
+		});
+
+		$(document).ready(function(){
+			$("#menuButton").click(function(){
+				$("#menu-table").toggle();
+			});
+		});
+	</script>
   </head>
 
   <body>
@@ -59,9 +71,12 @@
 						<a href="#"> <img src="images/rechercher.png"  /> </a>
 					</div>
 					<div>
-						<a href="#"> <img src="images/menu.png"  /> </a>
+						<a href="#"> <img  id="menuButton" src="images/menu.png"  /> </a>
 					</div>
 				</div>
+
+				<menu-table id="menu-table"></menu-table>
+				
 				<div>
 						<img  id="photo" src="images/photo-etudiants.png"/>
 				</div>
@@ -94,6 +109,7 @@
 						//document.getElementByTagName("activities-table").style.display = "inline";
 					}
 				</script>
+				
 			</div>
 		</div>
 	</body>

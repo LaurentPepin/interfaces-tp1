@@ -16,7 +16,6 @@ import { PolyDataService } from './poly-data.service';
 })
 export class NouvellesComponent implements OnInit {
   nouvelles: Object;
-  menuItems: Object;
   
   // Construteur
   constructor(private polyDataService: PolyDataService) {}
