@@ -34,20 +34,24 @@
 
   <body>
 		<header>
-
-			<div class="top-menu">FUTUR ETUDIANT | ETUDIANT ACTUEL | DIPLOME - ANCIEN | ENTREPRISE | MEDIAS | PROFESSEUR - PERSONNEL</div>
-
-		</header>
-
-		<div id="contenu">
-			<div>
+			<ul class="top-menu">
+				<li><a href="#">FUTUR ETUDIANT</a></li> | 
+				<li><a href="#">ETUDIANT ACTUEL</a></li> | 
+				<li><a href="#">DIPLOME - ANCIEN</a></li> | 
+				<li><a href="#">ENTREPRISE</a></li> | 
+				<li><a href="#">MEDIAS</a></li> | 
+				<li><a href="#">PROFESSEUR - PERSONNEL</a></li>
+			</ul>
+			<div class="site-header">
 				<a id="logo" href="http://www.polymtl.ca">
 					<img src="images/couleurs-poly.png" alt="Accueil" />
 				</a>
-
-
 				<div id="english">ENGLISH</div>
 			</div>
+		</header>
+
+		<div id="contenu">
+			
 			<div id="informations">
 				<table class="social-menu">
 					<tr>
@@ -93,19 +97,23 @@
 				</my-app>
 				
 				
-				<div class="onglets" onclick="showNews()">
+				<div class="onglets" id="news" "showNews()" onclick="showNews()">
 					NOUVELLES				
-				</div><div class="onglets" onclick="showActivities()">
+				</div><div class="onglets" id="activites" onclick="showActivities()">
 					ACTIVITÉS			
 				</div>
 				<news-table id="news-table"></news-table>
 				<script>
 					function showNews() {
     					document.getElementById("news-table").style.display = "initial";
+						document.getElementById("news").style.backgroundColor = "gray";
+						document.getElementById("activites").style.backgroundColor = "white";
 						//document.getElementByTagName("activities-table").style.display = "none";
 					}
 					function showActivities() {
     					document.getElementById("news-table").style.display = "none";
+						document.getElementById("activites").style.backgroundColor = "gray";
+						document.getElementById("news").style.backgroundColor = "white";
 						//document.getElementByTagName("activities-table").style.display = "inline";
 					}
 				</script>

@@ -1,7 +1,7 @@
 <script>
 $(document).ready(function(){
     $("#hide").click(function(){
-        $("menu-table").toggle();
-    });
+        $("menu-table").toggle(200);
+    })
 });
 </script>
