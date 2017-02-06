@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Polyfill(s) for older browsers -->
+	
     <script src="node_modules/core-js/client/shim.min.js"></script>
 
     <script src="node_modules/zone.js/dist/zone.js"></script>
@@ -19,17 +20,8 @@
       System.import('app').catch(function(err){ console.error(err); });
     </script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("#menu-table").hide();
-		});
-
-		$(document).ready(function(){
-			$("#menuButton").click(function(){
-				$("#menu-table").toggle();
-			});
-		});
-	</script>
+	<script src="poly.js"></script>
+	
   </head>
 
   <body>
@@ -103,20 +95,6 @@
 					ACTIVITÉS			
 				</div>
 				<news-table id="news-table"></news-table>
-				<script>
-					function showNews() {
-    					document.getElementById("news-table").style.display = "initial";
-						document.getElementById("news").style.backgroundColor = "gray";
-						document.getElementById("activites").style.backgroundColor = "white";
-						//document.getElementByTagName("activities-table").style.display = "none";
-					}
-					function showActivities() {
-    					document.getElementById("news-table").style.display = "none";
-						document.getElementById("activites").style.backgroundColor = "gray";
-						document.getElementById("news").style.backgroundColor = "white";
-						//document.getElementByTagName("activities-table").style.display = "inline";
-					}
-				</script>
 				
 			</div>
 		</div>
