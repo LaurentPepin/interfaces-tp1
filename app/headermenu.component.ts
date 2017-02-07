@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 import { PolyDataService } from './poly-data.service';
 
 @Component({
-  selector: 'headerMenu',
+  selector: 'header-menu-component',
   templateUrl: 'app/headermenu.component.html',
   styleUrls: ['../poly.css'],
   providers: [ PolyDataService ]
@@ -17,7 +17,7 @@ import { PolyDataService } from './poly-data.service';
 export class HeaderMenuComponent implements OnInit {
   headerMenuItems: Object;
 
-  constructor(private polyDataService: PolyDataService) { }
+  constructor(private polyDataService: PolyDataService) {console.log("headermenu") }
 
   getListeHeaderMenuItems():void {
     this.polyDataService.getListeHeaderMenuItems()

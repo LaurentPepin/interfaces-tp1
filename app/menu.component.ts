@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 import { PolyDataService } from './poly-data.service';
 
 @Component({
-  selector: 'menu-table',
+  selector: 'menu-table-component',
   templateUrl: 'app/menu.component.html',
   styleUrls: ['../poly.css'],
   providers: [ PolyDataService ]

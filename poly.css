@@ -6,57 +6,32 @@ body, header {
 
 #top-menu {
 	text-align: center;
-	color: white;
 	background-color: #b91e32;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	list-style-type: none;
-	margin: 0;
 }
 
-
-.top-menu li a{
-	color: white;
+#top-menu a {
+	color: white;	
+	text-transform: uppercase;
+	font-weight: bold;
 	text-decoration: none;
 }
-.top-menu li{
-	display :inline-block;
+
+#site-header {
+	margin: 5px 40px 5px 40px;
 }
 
-.site-header {
-	margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 40px;
-    margin-left: 40px;
-	
+#site-content {
+	background-color: #F2F1F1;
 }
 
-#logo {
-	display: inline-block;
-}
-
-
-#english {
+#english-link {
 	float: right;
-	display: inline-block;
 	color: #3F8EC4;
 }
 
-#liensRapides {
-	color: black;
-}
-
-#contenu {
-/*
-	margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 80px;
-    margin-left: 80px;
-	*/
-	margin: 0;
-}
-
-.social-menu {
+#social-menu {
 	padding-top: 10px;
 	padding-left: 10px;
 	display: inline-block;
@@ -64,119 +39,107 @@ body, header {
 	height: 80px;
 }
 
-.social-menu tr td img {
+#social-menu img {
 	padding-right: 10px;
 	width: 25px;
 	height: 25px;
-
 }
 
-#informations {
-	background-color: #F2F1F1;
-
-}
-
-#menus {
+#tools-menu {
+	padding-top: 10px;
 	display: inline-block;
 	float: right;
+}
+
+
+.tools-menu-element {
+	display: inline-block;
 	padding-top:10px;
-padding-right:10px;
-}
-
-#menus div {
-	padding-top:15px;
-display: inline-block;
-padding-right:10px;
-padding-left:10px;
-}
-
-#menus div img{
+	padding-right:20px;
 	vertical-align: text-top;
-	
 }
 
-#photo {
+#liensRapides {
+	color: black;
+}
+
+
+#photo-accueil {
 	display: block;
 	margin: auto;
 	max-width: 100%;
 	height: auto;
 }
 
-.descriptionPhoto {
+#descriptionPhoto {
 	padding: 10px;
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/master
+#descriptionPhoto a {
+	color: blue;
+	text-decoration: none;
+}
 
 .onglets {
 	display: inline-block;
-	width: 48%;
-	border-top: 1px solid orange;
-	border-bottom: 1px solid orange;
+	width: 50%;
 	font-weight: bold;
-	color: #1f1f1f;
+	color: #4f4f4f;
 	padding: 1%;
+	 box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border: 1px solid grey;
 }
 
-.nouvelles-table {
-  border-collapse: collapse;
+.border {
+	border: 1px solid orange;
 }
-.nouvelles-table tr {
+
+.nouvelles-table, .activities-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nouvelles-table tr, .activities-table tr {
 	border-bottom-style: solid; 
 	border-bottom-width: 1px;
 	border-bottom-color: orange;
 	padding: 5px 10px; 
 }
 
-.nouvelles-table td {
-	padding: 10px;
-}
 
-.nouvelle-date {
-	font-weight: bold;
-}
-#news {
-	background-color: gray;
+
+.nouvelles-table td, .activities-table td {
+	padding: 10px;
 }
 
 #menuItemsTable {
 	width: 100%;
 	padding: 0px;
-<<<<<<< HEAD
 	border-collapse: collapse;
-=======
 	margin-bottom: 5px;
-    transition: 3s ease-out;
->>>>>>> origin/master
 }
-
 
 .menuItem {
 	font-weight: bold;
 	padding: 10px;
 	background-color: white;
-<<<<<<< HEAD
 	border-top: 1px solid  #d9d9d9;
 	border-bottom: 1px solid  #d9d9d9;
-=======
 	margin: none;
 }
 
 .menu-arrow {
 	float: right;
->>>>>>> origin/master
 }
 
-.headerMenuItems a {
-	text-transform: uppercase;
-	color: white;
-	font-weight: bold;
-	text-decoration: none;
+#news-and-activities-container {
+	background-color: white;
 }
+
+
+
 
 
 

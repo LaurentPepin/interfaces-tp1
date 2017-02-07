@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 import { PolyDataService } from './poly-data.service';
 
 @Component({
-  selector: 'news-table',
+  selector: 'news-table-component',
   //template: '<table><li *ngFor="let nouvelle of nouvelles">{{ nouvelle.date }} - {{ nouvelle.titre }} : {{ nouvelle.message }}</li></ul>',
   templateUrl: 'app/nouvelles.component.html',
   styleUrls: ['../poly.css'],

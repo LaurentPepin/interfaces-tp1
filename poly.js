@@ -9,15 +9,30 @@ $(document).ready(function(){
 	});
 });
 
-function showNews() {
-			document.getElementById("news-table").style.display = "initial";
-			document.getElementById("news").style.backgroundColor = "gray";
-			document.getElementById("activites").style.backgroundColor = "white";
-			//document.getElementByTagName("activities-table").style.display = "none";
-}
-function showActivities() {
-		document.getElementById("news-table").style.display = "none";
-		document.getElementById("activites").style.backgroundColor = "gray";
-		document.getElementById("news").style.backgroundColor = "white";
-		//document.getElementByTagName("activities-table").style.display = "inline";
-}
+$(document).ready(function(){
+		$(".activities-table").hide();
+        $("#news").addClass("border");
+		$("#activities").css("backgroundColor","grey");
+});
+
+$(document).ready(function(){
+	$("#activities").click(function(){
+		$("#news").removeClass("border");
+		$("#news").css("backgroundColor","grey");
+		$("#activities").css("backgroundColor","white");
+		$("#activities").addClass("border");
+		$(".nouvelles-table").hide();
+		$(".activities-table").show();
+	});
+});
+
+$(document).ready(function(){
+	$("#news").click(function(){
+		$("#activities").removeClass("border");
+		$("#activities").css("backgroundColor","grey");
+		$("#news").css("backgroundColor","white");
+		$("#news").addClass("border");
+		$(".nouvelles-table").show();
+		$(".activities-table").hide();
+	});
+});

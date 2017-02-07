@@ -1,6 +1,5 @@
 <table class="nouvelles-table">
     <tr *ngFor="let nouvelle of nouvelles">
-        <td class="nouvelle-date">{{ nouvelle.date}} - </td>
-        <td class="nouvelle-titre">{{ nouvelle.titre}} : {{ nouvelle.message}}</td>
+        <td><strong>{{ nouvelle.date}}</strong> - {{ nouvelle.titre}} : {{ nouvelle.message}}</td>
     </tr>
 </table>
